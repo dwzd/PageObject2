@@ -28,7 +28,7 @@ public class PageObjectModel {
         //SearchPage.originTextBox(driver).sendKeys("beijing");
         SearchPage.originTextBoxKeys(driver, "beijing");
         SearchPage.destinationTextBox(driver).sendKeys("shanghai");
-        SearchPage.departureDateTextBox(driver).sendKeys("2018/05/15");
+        SearchPage.departureDateTextBox(driver).sendKeys("2018/05/20");
         SearchPage.returnDateTextBox(driver).clear();
         SearchPage.returnDateTextBox(driver).sendKeys("2018/06/18");
         SearchPage.clickSearchButton(driver);
