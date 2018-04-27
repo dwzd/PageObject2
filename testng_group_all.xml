@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Test_Suite">
+    <test name="GroupingTest" preserve-order="true">
+        <groups>
+            <define name = "all">
+                <include name="suv"></include>
+                <include name="sedan"></include>
+                <include name="bike"></include>
+            </define>
+            <define name="vehicle">
+                <include name="suv"></include>
+                <include name="sedan"></include>
+            </define>
+            <run>
+                <include name="vehicle"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ddd.testng.testclasses.TestNG_Grouping"></class>
+
+        </classes>
+    </test>
+    <test name="Test2" enabled="false">
+        <classes>
+            <class name="com.ddd.testng.testclasses.TestNG_Grouping"></class>
+            <class name="com.ddd.testng.testclasses.TestNG_Prioritiy"></class>
+        </classes>
+    </test>
+
+</suite>

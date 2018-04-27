@@ -1,8 +1,9 @@
 package com.ddd.testng.testclasses;
 
+import com.ddd.base.BaseTestSuite;
 import org.testng.annotations.*;
 
-public class TestNG_TestClass1 {
+public class TestNG_TestClass1 extends BaseTestSuite {
     @BeforeClass
     public void setUp() {
         System.out.println("\nTestNG_TestClass1 -> BeforeClass->在类里所有方法运行之前跑");

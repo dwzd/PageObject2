@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Test_Suite">
+    <test name="GroupingTest">
+        <groups>
+            <run>
+                <include name="bike"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.ddd.testng.testclasses.TestNG_Grouping"></class>
+
+        </classes>
+    </test>
+
+</suite>

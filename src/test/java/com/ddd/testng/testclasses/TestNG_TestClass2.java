@@ -1,8 +1,9 @@
 package com.ddd.testng.testclasses;
 
+import com.ddd.base.BaseTestSuite;
 import org.testng.annotations.*;
 
-public class TestNG_TestClass2 {
+public class TestNG_TestClass2 extends BaseTestSuite {
     @BeforeClass
 
     public void setUp() {
