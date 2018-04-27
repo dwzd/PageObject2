@@ -17,20 +17,22 @@ public class Testng_ClassAnnotationTest {
     }
 
     @BeforeClass
-    public void setUpClass(){
+    public void setUpClass() {
         System.out.println("before class!");
     }
+
     @AfterClass
-    public void tearDownClass(){
+    public void tearDownClass() {
         System.out.println("after class!");
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         System.out.println("test1");
     }
+
     @Test
-    public void test2 (){
+    public void test2() {
         System.out.println("test2");
     }
 
